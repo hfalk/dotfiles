@@ -1,11 +1,13 @@
+This repo is heavily inspired by [Morten Vaale Noddeland](https://github.com/mortenvn/new-dotfiles)
+
 # Getting started
 1. `git clone https://github.com/hfalk/dotfiles`
-or `cd; curl -#L https://github.com/hfalk/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md}`
-2. Modify **settings.sh** to your needs
+or `curl https://github.com/hfalk/dotfiles/tarball/master`
+2. Modify **siettings.sh** to your needs
     * Change git name, and remove packages/applications you don't need
 3. Run the install script: `./install.sh`
 
-# But... What does the install script DO?
+# What does the install script do?
 Lots of things! The following things will happen in cronological order:
 
 <sub>**[?]** = **Optional** (the installer will ask before making the change)</sub>
