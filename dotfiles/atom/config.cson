@@ -1,0 +1,28 @@
+'core':
+  'themes': [
+    'atom-dark-ui'
+    'atom-dark-syntax'
+  ]
+  'excludeVcsIgnoredPaths': false
+  'disabledPackages': []
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.DS_Store'
+  ]
+'editor':
+  'fontFamily': 'Source Code Pro'
+  'showIndentGuide': true
+  'fontSize': 13
+  'confirmCheckoutHeadRevision': false
+'autocomplete':
+  'includeCompletionsFromAllBuffers': true
+'welcome':
+  'showOnStartup': false
+'whitespace':
+  'ignoreWhitespaceOnCurrentLine': false
+'fuzzy-finder':
+  'ignoredNames': [
+    '*.class'
+    '*.asc'
+  ]
