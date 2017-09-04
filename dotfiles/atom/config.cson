@@ -1,7 +1,7 @@
 'core':
   'themes': [
-    'atom-dark-ui'
-    'atom-dark-syntax'
+    'solarized-dark-ui'
+    'solarized-dark-syntax'
   ]
   'excludeVcsIgnoredPaths': false
   'disabledPackages': []
@@ -10,19 +10,9 @@
     '.svn'
     '.DS_Store'
   ]
-'editor':
-  'fontFamily': 'Source Code Pro'
-  'showIndentGuide': true
-  'fontSize': 13
-  'confirmCheckoutHeadRevision': false
-'autocomplete':
-  'includeCompletionsFromAllBuffers': true
+'linter-eslint':
+  fixOnSave: true
+'linter-ui-default':
+  showPanel: true
 'welcome':
   'showOnStartup': false
-'whitespace':
-  'ignoreWhitespaceOnCurrentLine': false
-'fuzzy-finder':
-  'ignoredNames': [
-    '*.class'
-    '*.asc'
-  ]
