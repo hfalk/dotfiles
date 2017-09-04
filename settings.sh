@@ -8,7 +8,7 @@ GIT_EMAIL="hfalk4@gmail.com"
 # P.S. The installer script won't install the applications unless you tell it to. It's your call  :)
 BREW_CASKS="alfred android-studio appcleaner atom basictex calibre flux gpgtools
   google-chrome google-drive intellij-idea iterm2 jetbrains-toolbox postman
-  pycharm skype skype-for-business slack spectacle spotify torbrowser
+  pycharm r-app skype skype-for-business slack spectacle spotify torbrowser
   transmission vlc"
 
 # NODE
