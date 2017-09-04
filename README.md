@@ -1,9 +1,9 @@
-This repo is heavily inspired by [Morten Vaale Noddeland](https://github.com/mortenvn/new-dotfiles)
+This repo is heavily inspired by [Morten Vaale Noddeland](https://github.com/mortenvn/new-dotfiles). Thanks :)
 
 # Getting started
 1. `git clone https://github.com/hfalk/dotfiles`
 or `curl https://github.com/hfalk/dotfiles/tarball/master`
-2. Modify **siettings.sh** to your needs
+2. Modify **settings.sh** to your needs
     * Change git name, and remove packages/applications you don't need
 3. Run the install script: `./install.sh`
 
@@ -21,7 +21,7 @@ Lots of things! The following things will happen in cronological order:
   * Symlink [fish specific dotfiles](https://github.com/mortenvn/dotfiles/tree/master/dotfiles/fish)
   * Install [Fisherman](https://fisherman.github.io/) (fish package manager)
   * Install Fisherman packages (e.g. [pure theme](https://github.com/rafaelrinaldi/pure) and [z](https://github.com/rupa/z))
-  * Install Oh My Fish
+  * Install [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish)
   * **[?]** Set fish as default theme
 * **[?] Bash**
   * Symlink [bash specific dotfiles](https://github.com/mortenvn/dotfiles/tree/master/dotfiles/bash)
@@ -34,6 +34,7 @@ Lots of things! The following things will happen in cronological order:
 * **[?] Install global NPM packages**
 * **[?] Change macOS default (about 100 tweaks in total)**
 * **[?] Install applications (such as Chrome and Spotify)**
+* **[?] Install Atom packages and config files**
 
 For more information of what the **actual dotfiles** does, take a look at [source code](https://github.com/hfalk/dotfiles/tree/master/dotfiles).
 
