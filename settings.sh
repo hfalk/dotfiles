@@ -30,7 +30,7 @@ OPTIONAL_BREW_PACKAGES="nmap nvm pyenv wget"
 
 # BREW (ESSENTIAL)
 ESSENTIAL_BREW_PACKAGES="coreutils diff-so-fancy fish git grep mongodb node
-  postgresql python python3 openssh screen vim --with-override-system-vi"
+  postgresql python3 openssh screen vim --with-override-system-vi"
 
 # FISH (installed with fisherman)
 FISHERMAN_PACKAGES="rafaelrinaldi/pure z jbonjean/re-search"
