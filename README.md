@@ -61,5 +61,5 @@ For more information of what the **actual dotfiles** does, take a look at [sourc
 2. Add key to git: `git config --global user.signingkey XXXXXXX`
 3. To set all commits for a repository to be signed by default: `git config commit.gpgsign true`
    * To set all commits in any local repository on your computer to be signed by default: `git config --global commit.gpgsign true`
-## App to install
+## Apps to install
 Cisco AnyConnect Secure Mobility Client, Office365
