@@ -54,12 +54,12 @@ For more information of what the **actual dotfiles** does, take a look at [sourc
 2. Select **Snazzy** from **Preferences** ➔ **Profiles** ➔ **Colors** ➔ **Load Presets**
 
 # Things to remember
-## Generate SSH key (use for github ++)
-## Add GPG to Git/Github
+### Generate SSH key (use for github ++)
+### Add GPG to Git/Github
 1. Use gpgtools to create a key (Remember same name and email as github)
 1. List keys: `gpg --list-keys`
 2. Add key to git: `git config --global user.signingkey XXXXXXX`
 3. To set all commits for a repository to be signed by default: `git config commit.gpgsign true`
    * To set all commits in any local repository on your computer to be signed by default: `git config --global commit.gpgsign true`
-## Apps to install
+### Apps to install
 Cisco AnyConnect Secure Mobility Client, Office365
