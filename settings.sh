@@ -15,9 +15,8 @@ BREW_CASKS="alfred android-studio appcleaner atom basictex calibre flux gpgtools
 NPM_PACKAGES="n ncu yarn"
 
 # ATOM
-APM_PACKAGES="atom-beautify autoclose-html autocomplete-paths color-picker editorconfig expose file-icons git-blame git-time-machine
-  highlight-selected language-babel
-  language-r linter linter-eslint linter-ui-default minimap open-recent pigments pretty-json
+APM_PACKAGES="atom-beautify autoclose-html autocomplete-paths busy-signal color-picker editorconfig expose file-icons git-blame git-time-machine
+  highlight-selected language-babel language-r linter linter-eslint linter-flake8 linter-ui-default minimap open-recent pigments pretty-json
   react todo-show vim-mode"
 
 # BREW (OPTIONAL)
@@ -39,4 +38,4 @@ FISHERMAN_PACKAGES="rafaelrinaldi/pure z jbonjean/re-search"
 BASH_BREW_PACKAGES="bash bash-completion z"
 
 # PYTHON
-PIP_PACKAGES="pygments virtualenv virtualfish"
+PIP_PACKAGES="flake8 pygments virtualenv virtualfish"
