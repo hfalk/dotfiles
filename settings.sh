@@ -9,7 +9,7 @@ GIT_EMAIL="hfalk4@gmail.com"
 BREW_CASKS="alfred android-studio appcleaner atom basictex calibre flux gpgtools
   google-chrome google-drive intellij-idea iterm2 jetbrains-toolbox postman
   pycharm r-app skype skype-for-business slack spectacle spotify torbrowser
-  transmission vlc"
+  transmission veracrypt vlc"
 
 # NODE
 NPM_PACKAGES="n ncu yarn"
