@@ -1,18 +1,33 @@
-'core':
-  'themes': [
-    'solarized-dark-ui'
-    'solarized-dark-syntax'
-  ]
-  'excludeVcsIgnoredPaths': false
-  'disabledPackages': []
-  'ignoredNames': [
-    '.git'
-    '.svn'
-    '.DS_Store'
-  ]
-'linter-eslint':
-  fixOnSave: true
-'linter-ui-default':
-  showPanel: true
-'welcome':
-  'showOnStartup': false
+"*":
+  "atom-beautify":
+    css:
+      beautify_on_save: true
+    html:
+      beautify_on_save: true
+    js:
+      beautify_on_save: true
+    json:
+      beautify_on_save: true
+    python:
+      beautify_on_save: true
+  core:
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  "exception-reporting":
+    userId: "d3505a68-e35c-49e1-8711-493fe234c859"
+  "linter-eslint":
+    fixOnSave: true
+  "linter-ui-default":
+    showPanel: true
+  "todo-show": {}
+  welcome:
+    showOnStartup: false

@@ -5,26 +5,29 @@ function ....  ; cd ../../.. ; end
 function ..... ; cd ../../../.. ; end
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;
-  npm install npm -g; npm update -g; apm update; apm upgrade; apm clean;
-  fisher up;'
+alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update -g; apm update; apm upgrade; apm clean; omf update; fisher up"
 
 # git shortcuts
-alias gl='git pull --prune'
-alias gp='git push'
-alias gd='git diff'
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gcam='git commit -am'
-alias gch='git checkout'
-alias gb='git branch'
-alias gs='git status --short --branch'
-alias gac='git add -A && git commit -m'
-alias glg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+alias ga="git add"
+alias gap="git add --patch"
+alias gl="git pull --prune"
+alias gp="git push"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gc="git commit -m"
+alias gcv="git commit -v"
+alias gca="git commit -am"
+alias gr="git revert"
+alias gch="git checkout"
+alias gb="git branch"
+alias gs="git status --short --branch"
+alias gsl="git status"
+alias glp="git log -p"
+alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 # Log, just more space efficient and with pretty colors
 
 # Edit hosts file
-alias hosts='sudo vim /etc/hosts'
+alias hosts="sudo vim /etc/hosts"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -49,12 +52,12 @@ alias diskspace_report="df -P -kHl"
 alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true; killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false; killall Finder"
 
 # Hide/show all desktop icons (useful when presenting)
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false; killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true; killall Finder"
 
 # Disable Spotlight
 alias spotoff="sudo mdutil -a -i off"
@@ -63,17 +66,6 @@ alias spoton="sudo mdutil -a -i on"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
-# Print each PATH entry on a separate line
-alias path='echo -e ${PATH//:/\\n}'
-
-# -----------------------------------------------------------------------------
-# mkdir
-# -----------------------------------------------------------------------------
-# Create a new directory and enter it
-function md() {
-	mkdir -p "$@" && cd "$@"
-}
 
 # Run previous command with sudo
 function sudo!!

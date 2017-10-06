@@ -33,9 +33,19 @@ install_fisherman_packages() {
 }
 
 install_oh_my_fish() {
-  print_info "Installing Oh My Fish"
-  curl -L https://get.oh-my.fish | fish
-  print_result $? "Install Oh My Fish\n"
+  if ask_question "Do you want to install Oh My Fish?"; then
+    rm ~/.config/fish/functions/fish_prompt.fish
+    if test -d $HOME/.local/share/omf; then
+      print_error "Oh! Seems like Oh My Fish were already installed ¯\_(ツ)_/¯\n"
+    else
+      curl -L https://get.oh-my.fish | fish
+      /usr/local/bin/fish -c "omf install https://github.com/hfalk/theme-falk"
+      /usr/local/bin/fish -c "omf theme falk"
+      print_result $? "Install Oh My Fish\n"
+    fi
+  else
+    print_error "Alright, your loss!"
+  fi
 }
 
 install_re_search() {
@@ -43,7 +53,7 @@ install_re_search() {
 
   make -C ~/.config/fisherman/re-search
   chmod +x ~/.config/fisherman/re-search/re-search
-  ln -s ~/.config/fisherman/re-search/re-search /usr/local/bin/re-search
+  ln -sb ~/.config/fisherman/re-search/re-search /usr/local/bin/re-search
 
   print_result $? "Install re-search\n"
 }

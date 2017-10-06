@@ -59,7 +59,7 @@ macos_tweaks() {
 }
 clean_up() {
   # Cleaning up
-  print_header "Cleaning up"
+  print_heading "Cleaning up"
   brew cleanup
   brew cask cleanup
 }
@@ -82,7 +82,7 @@ ask_for_sudo
 ./setup/node.sh
 macos_tweaks
 ./setup/applications.sh
-./setuo/atom.sh
+./setup/atom.sh
 clean_up
 
 print_goodbye

@@ -52,11 +52,11 @@ hi Number ctermfg = red
 " ----------------------------------------------
 " BASICS
 " ----------------------------------------------
-" One tab in a file is shown as 4 spaces
-set tabstop=2
+" One tab in a file is shown as 2 spaces
+set tabstop=1
 
-" One tab inserts 4 spaces
-set softtabstop=2
+" One tab inserts 2 spaces
+set softtabstop=1
 
 " Tab is replaced by the spaces specified as above
 set expandtab

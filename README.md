@@ -1,12 +1,13 @@
-This repo is heavily inspired by [Morten Vaale Noddeland](https://github.com/mortenvn/new-dotfiles). Thanks :)
+This repo is heavily inspired by [Morten Vaale Noddeland](https://github.com/mortenvn/dotfiles). Thanks :)
 
 # Getting started
-1. `git clone https://github.com/hfalk/dotfiles`
-or `curl https://github.com/hfalk/dotfiles/tarball/master`
+1. **Recommended:** Fork project to tweek the settings and make it your own
+  or do it locally: `git clone https://github.com/hfalk/dotfiles`
 2. Modify **settings.sh** to your needs
     * Change git name, and remove packages/applications you don't need
-3. Run the install script: `./install.sh`
-
+3. Update **macos.sh** with preferred tweaks
+4. Run the install script: `bash install.sh`
+(**Remember:** this project is using symlinks, so don't remove/delete projectfolder after install)
 # What does the install script do?
 Lots of things! The following things will happen in cronological order:
 
@@ -22,7 +23,7 @@ Lots of things! The following things will happen in cronological order:
   * Install [Fisherman](https://fisherman.github.io/) (fish package manager)
   * Install Fisherman packages (e.g. [pure theme](https://github.com/rafaelrinaldi/pure) and [z](https://github.com/rupa/z))
   * Install [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish)
-  * **[?]** Set fish as default theme
+  * **[?]** Set fish as default shell
 * **[?] Bash**
   * Symlink [bash specific dotfiles](https://github.com/mortenvn/dotfiles/tree/master/dotfiles/bash)
   * Install bash specific brew dependencies
@@ -59,7 +60,7 @@ For more information of what the **actual dotfiles** does, take a look at [sourc
 1. Use gpgtools to create a key (Remember same name and email as github)
 1. List keys: `gpg --list-keys`
 2. Add key to git: `git config --global user.signingkey XXXXXXX`
-3. To set all commits for a repository to be signed by default: `git config commit.gpgsign true`
-   * To set all commits in any local repository on your computer to be signed by default: `git config --global commit.gpgsign true`
+3. To set all commits for a repository to be signed by default: `git config --global commit.gpgsign true`
+   * To set all commits in any local repository on your computer to be signed by default: `git config commit.gpgsign true`
 ### Apps to install
 Cisco AnyConnect Secure Mobility Client, Office365

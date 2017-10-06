@@ -58,10 +58,10 @@ install_optional_brew_packages() {
 }
 
 install_python_packages() {
-  print_info "Installing python packages:"
+  print_info "Installing python 3 packages:"
   print_list $@
-  pip install "$@"
-  print_result $? "Install python packages\n"
+  pip3 install "$@"
+  print_result $? "Install python 3 packages\n"
 }
 
 print_heading "Install prerequisites"
