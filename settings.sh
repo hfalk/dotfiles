@@ -15,9 +15,11 @@ BREW_CASKS="alfred android-studio appcleaner atom google-backup-and-sync basicte
 NPM_PACKAGES="n ncu"
 
 # ATOM
-APM_PACKAGES="atom-beautify autoclose-html autocomplete-paths busy-signal color-picker editorconfig expose file-icons git-blame git-time-machine
-  highlight-selected intentions language-babel language-r linter linter-eslint linter-flake8 linter-ui-default minimap open-recent pigments
-  todo-show vim-mode"
+APM_PACKAGES="atom-beautify autoclose-html autocomplete-paths busy-signal color-picker
+  editorconfig elm-format elmjutsu expose file-icons git-blame git-time-machine
+  highlight-selected intentions language-babel language-elm language-r linter
+  linter-elm-make linter-eslint linter-flake8 linter-ui-default minimap open-recent
+  pigments todo-show vim-mode"
 
 # BREW (OPTIONAL)
 OPTIONAL_BREW_PACKAGES="bazel gnupg nmap nvm pyenv wget yarn"
