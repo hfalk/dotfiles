@@ -3,6 +3,8 @@ function ..    ; cd .. ; end
 function ...   ; cd ../.. ; end
 function ....  ; cd ../../.. ; end
 function ..... ; cd ../../../.. ; end
+# The opposite of cdf. Will open the the current Terminal path in the existing Finder window.
+function cds ; open . ; end
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update="brew update; brew upgrade; brew cleanup; brew cask upgrade; brew cask cleanup; npm update -g; apm update; apm upgrade; apm clean; omf update; fisher up"
