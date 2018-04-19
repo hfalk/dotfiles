@@ -5,7 +5,7 @@ function ....  ; cd ../../.. ; end
 function ..... ; cd ../../../.. ; end
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update -g; apm update; apm upgrade; apm clean; omf update; fisher up"
+alias update="brew update; brew upgrade; brew cleanup; brew cask upgrade; brew cask cleanup; npm update -g; apm update; apm upgrade; apm clean; omf update; fisher up"
 
 # git shortcuts
 alias ga="git add"
@@ -17,7 +17,7 @@ alias gdc="git diff --cached"
 alias gc="git commit -m"
 alias gcv="git commit -v"
 alias gca="git commit -am"
-alias gr="git revert"
+alias gre="git revert"
 alias gch="git checkout"
 alias gb="git branch"
 alias gs="git status --short --branch"
