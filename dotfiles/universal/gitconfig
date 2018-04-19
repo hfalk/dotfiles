@@ -68,9 +68,3 @@
 	added = green
 	changed = red
 	untracked = cyan
-[user]
-	name = Håvard Falk
-	email = hfalk4@gmail.com
-	signingkey = CB44CC95
-[commit]
-	gpgsign = true
