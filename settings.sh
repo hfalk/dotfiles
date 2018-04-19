@@ -7,12 +7,12 @@ GIT_EMAIL="hfalk4@gmail.com"
 # Please make sure that you remove all the programs you don't want to install on your computer
 # P.S. The installer script won't install the applications unless you tell it to. It's your call  :)
 BREW_CASKS="alfred android-studio appcleaner atom google-backup-and-sync basictex
-  calibre flux gpgtools google-chrome intellij-idea iterm2 java jetbrains-toolbox postman
+  calibre flux google-chrome intellij-idea iterm2 java jetbrains-toolbox postman
   pycharm r-app skype skype-for-business slack spectacle spotify torbrowser
   transmission veracrypt vlc"
 
 # NODE
-NPM_PACKAGES="n ncu yarn"
+NPM_PACKAGES="n ncu"
 
 # ATOM
 APM_PACKAGES="atom-beautify autoclose-html autocomplete-paths busy-signal color-picker editorconfig expose file-icons git-blame git-time-machine
@@ -20,7 +20,7 @@ APM_PACKAGES="atom-beautify autoclose-html autocomplete-paths busy-signal color-
   todo-show vim-mode"
 
 # BREW (OPTIONAL)
-OPTIONAL_BREW_PACKAGES="bazel nmap nvm pyenv wget"
+OPTIONAL_BREW_PACKAGES="bazel gnupg nmap nvm pyenv wget yarn"
 
 # --------------------------------------------------------------
 # DANGER ZONE! EDIT THE FOLLOWING SETTINGS WITH CARE
