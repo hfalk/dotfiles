@@ -9,7 +9,7 @@
     json:
       beautify_on_save: true
     python:
-      beautify_on_save: true
+      max_line_length: 89
   core:
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -17,17 +17,24 @@
       ".svn"
       ".DS_Store"
     ]
+    packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
-    themes: [
-      "one-dark-ui"
-      "solarized-dark-syntax"
-    ]
+  editor: {}
+  "elm-format":
+    binary: "/usr/local/bin/elm-format"
+  elmjutsu:
+    cacheDirectory: "/var/folders/75/n7y5gp_96fj7hfzmzymf0_8c0000gn/T/elmjutsu11520iBa02NIwfxuF"
   "exception-reporting":
     userId: "d3505a68-e35c-49e1-8711-493fe234c859"
+  "language-elm":
+    autocompleteEnabled: false
   "linter-eslint":
     fixOnSave: true
-  "linter-ui-default":
-    showPanel: true
+  "linter-flake8":
+    maxLineLength: 89
+  "linter-ui-default": {}
   "todo-show": {}
+  "tree-view": {}
+  "vim-mode-plus": {}
   welcome:
     showOnStartup: false
