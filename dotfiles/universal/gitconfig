@@ -22,6 +22,9 @@
 	stash-all = stash save --include-untracked
 	# Stash untracked files as well (files that's not been added with 'git add' yet)
 
+	# List aliases
+	aliases = config --get-regexp alias
+
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
@@ -30,6 +33,10 @@
 [credential]
 	helper = osxkeychain
 
+[help]
+	# Automatically correct and execute mistyped commands
+	autocorrect = 1
+	
 # Push easily. http://stackoverflow.com/a/23918418/89484
 [push]
 	default = current
