@@ -76,3 +76,22 @@ end
 
 # Like 'cat', but with pretty colors
 alias c="pygmentize -O style=monokai -f console256 -g"
+
+# Get week number
+alias week='date +%V'
+
+# Merge PDF files
+# Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
+alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
+
+# Always enable colored `grep` output
+# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Shortcuts
+alias d="cd ~/Desktop"
+alias do="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias p="cd ~/Desktop/Projects"
