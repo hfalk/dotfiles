@@ -34,7 +34,7 @@ ESSENTIAL_BREW_PACKAGES="coreutils diff-so-fancy fish git grep mongodb node
   postgresql python python3 openssh screen vim"
 
 # FISH (installed with fisherman)
-FISHERMAN_PACKAGES="rafaelrinaldi/pure z jbonjean/re-search"
+FISHERMAN_PACKAGES="z jbonjean/re-search"
 
 # BASH (installed with brew)
 BASH_BREW_PACKAGES="bash bash-completion z"
