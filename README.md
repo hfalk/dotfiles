@@ -56,18 +56,25 @@ For more information of what the **actual dotfiles** does, take a look at [sourc
 
 # Things to remember
 ### Generate SSH key (use for github ++)
+
 ### Add GPG to Git/Github
 1. Generate a new gpg [key](https://help.github.com/articles/generating-a-new-gpg-key/) (Remember same name and email as github)
-  `gpg --gen-key`
+  `gpg --full-generate-key`
+   * Select **RSA** and key size of **4096**
+   * Let the key never expire (press **enter**)
+   * Enter **name** and **email**
+   * Enter a **passphrase**  
 2. List keys: `gpg --list-secret-keys --keyid-format LONG`
-3. Export this key and add it to GitHub
-  `gpg --armor --export <PASTE_LONG_KEY_HERE>`
+   * It output should look something like this: *sec   4096R/XXXXXXXX"*
+   * The ID is the X's
+3. Export this key and add it to GitHub (https://github.com/settings/keys):
+  `gpg --armor --export <PASTE_LONG_KEY_HERE(XXXXXXXX)>` 
+   * Copy your GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK-----` and ending with `-----END PGP PUBLIC KEY BLOCK-----`.
 4. Add key to git: `git config --global user.signingkey <PASTE_LONG_KEY_HERE>`
 5. To set all commits for a repository to be signed by default: `git config --global commit.gpgsign true`
    * To set all commits in any local repository on your computer to be signed by default: `git config commit.gpgsign true`
 6. Export to bash_profile, to avoid re-entering password
   `echo 'export GPG_TTY=$(tty)' >> ~/.bash_profile`
-
-
+  
 ### Apps to install
 Cisco AnyConnect Secure Mobility Client, Office365
