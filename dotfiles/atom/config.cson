@@ -19,7 +19,8 @@
     ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
-  editor: {}
+  editor:
+    preferredLineLength: 89
   "elm-format":
     binary: "/usr/local/bin/elm-format"
   elmjutsu:
@@ -34,7 +35,7 @@
     maxLineLength: 89
   "linter-ui-default": {}
   "todo-show": {}
-  "tree-view": {}
-  "vim-mode-plus": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
