@@ -19,7 +19,7 @@ APM_PACKAGES="atom-beautify autoclose-html autocomplete-paths busy-signal color-
   editorconfig elm-format elmjutsu expose file-icons git-blame git-time-machine
   highlight-selected intentions language-babel language-elm language-r linter
   linter-elm-make linter-eslint linter-flake8 linter-ui-default minimap open-recent
-  pigments todo-show vim-mode"
+  pigments seti-syntax seti-ui todo-show"
 
 # BREW (OPTIONAL)
 OPTIONAL_BREW_PACKAGES="bazel gnupg nmap nvm pyenv wget yarn"
@@ -31,7 +31,7 @@ OPTIONAL_BREW_PACKAGES="bazel gnupg nmap nvm pyenv wget yarn"
 
 # BREW (ESSENTIAL)
 ESSENTIAL_BREW_PACKAGES="coreutils diff-so-fancy fish git grep mongodb node
-  postgresql python python3 openssh screen vim"
+  postgresql python python@2 openssh screen vim"
 
 # FISH (installed with fisherman)
 FISHERMAN_PACKAGES="z jbonjean/re-search"
