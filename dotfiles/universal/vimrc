@@ -10,6 +10,8 @@ Plug 'airblade/vim-gitgutter'            " Mark lines as changed/added/removed
 Plug 'dhruvasagar/vim-table-mode'        " Prettier markdown tables
 " Plug 'Valloric/YouCompleteMe'          " Code-completion
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  "A command-line fuzzy finder
+
 call plug#end()
 
 

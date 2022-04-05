@@ -2,15 +2,36 @@
   "atom-beautify":
     css:
       beautify_on_save: true
-    html:
-      beautify_on_save: true
-    js:
-      beautify_on_save: true
+    general:
+      beautifyEntireFileOnSave: false
+    html: {}
+    js: {}
     json:
+      beautify_on_save: true
+    jsx:
       beautify_on_save: true
     python:
       max_line_length: 89
   core:
+    customFileTypes:
+      "source.ini": [
+        ".hgrc"
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "image-view"
+      "linter-ui-default"
+      "atom-beautify"
+      "linter"
+      "tree-view"
+    ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
       ".git"
@@ -20,22 +41,37 @@
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
   editor:
-    preferredLineLength: 89
+    preferredLineLength: 99
+    tabLength: 4
   "elm-format":
     binary: "/usr/local/bin/elm-format"
   elmjutsu:
     cacheDirectory: "/var/folders/75/n7y5gp_96fj7hfzmzymf0_8c0000gn/T/elmjutsu11520iBa02NIwfxuF"
   "exception-reporting":
     userId: "d3505a68-e35c-49e1-8711-493fe234c859"
+  "language-babel": {}
   "language-elm":
     autocompleteEnabled: false
   "linter-eslint":
     fixOnSave: true
   "linter-flake8":
     maxLineLength: 89
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
+  nuclide:
+    installRecommendedPackages: true
+    "nuclide-flow":
+      canUseFlowBin: true
   "todo-show": {}
+  "tool-bar":
+    visible: false
   "tree-view":
     hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
+".editorconfig.source":
+  editor:
+    tabLength: 4
+".reason.source":
+  editor:
+    preferredLineLength: 110
