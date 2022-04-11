@@ -75,7 +75,6 @@ ask_for_sudo
 
 ./setup/prerequisites.sh
 ./setup/zsh.sh
-./setup/bash.sh
 ./setup/vim.sh
 ./setup/git.sh
 ./setup/node.sh

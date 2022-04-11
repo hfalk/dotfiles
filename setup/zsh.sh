@@ -27,7 +27,6 @@ add_zsh_as_allowed_shell() {
 
 install_oh_my_zsh() {
   if ask_question "Do you want to install Oh My Zsh?"; then
-    rm ~/.config/fish/functions/fish_prompt.fish
     if test -d $HOME/.oh-my-zsh; then
       print_error "Oh! Seems like Oh My Zsh were already installed ¯\_(ツ)_/¯\n"
     else

@@ -1,5 +1,3 @@
-This repo is heavily inspired by [Morten Vaale Noddeland](https://github.com/mortenvn/dotfiles). Thanks :)
-
 # Getting started
 1. **Recommended:** Fork project to tweek the settings and make it your own
   or do it locally: `git clone https://github.com/hfalk/dotfiles`
@@ -76,5 +74,8 @@ For more information of what the **actual dotfiles** does, take a look at [sourc
 6. Export to bash_profile, to avoid re-entering password
   `echo 'export GPG_TTY=$(tty)' >> ~/.bash_profile`
   
-### Apps to install
-Cisco AnyConnect Secure Mobility Client, Office365
+### Apps to instal
+
+#### Old apps
+
+basictex, transmission

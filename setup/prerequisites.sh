@@ -57,16 +57,8 @@ install_optional_brew_packages() {
   fi
 }
 
-install_python_packages() {
-  print_info "Installing python 3 packages:"
-  print_list $@
-  pip3 install "$@"
-  print_result $? "Install python 3 packages\n"
-}
-
 print_heading "Install prerequisites"
 install_xcode_select
 install_brew
 install_brew_packages $ESSENTIAL_BREW_PACKAGES
-install_python_packages $PIP_PACKAGES
 install_optional_brew_packages $OPTIONAL_BREW_PACKAGES
