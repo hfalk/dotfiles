@@ -27,7 +27,7 @@ add_bash_as_allowed_shell() {
 
 
 print_heading "Bash"
-printf "If you want, we can make Bash a bit better as well. Fish will still be the default shell, so this will only be useful if you sometimes want to use bash instead of fish\n\n"
+printf "If you want, we can make Bash a bit better as well. Zsh will still be the default shell, so this will only be useful if you sometimes want to use bash instead of zsh\n\n"
 
 if ask_question "Add Bash support?"; then
   create_symlinks

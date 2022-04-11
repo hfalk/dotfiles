@@ -1,19 +1,19 @@
 # Navigation
-function ..    ; cd .. ; end
-function ...   ; cd ../.. ; end
-function ....  ; cd ../../.. ; end
-function ..... ; cd ../../../.. ; end
+function ..() { cd .. }
+function ...() { cd ../.. }
+function ....() { cd ../../.. }
+function .....() { cd ../../../.. }
 # The opposite of cdf. Will open the the current Terminal path in the existing Finder window.
-function cds ; open . ; end
+function cds() { open . }
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update="brew update; brew upgrade; brew cleanup; brew cask upgrade; brew cask cleanup; npm update -g; apm update; apm upgrade; apm clean; omf update; fisher up"
+alias update="brew update; brew upgrade; brew cleanup; brew cask upgrade; npm update -g; apm update; apm upgrade; apm clean; omf update; fisher up"
 
 # git shortcuts
 alias ga="git add"
 alias gap="git add --patch"
-alias gl="git pull --prune"
-alias gp="git push"
+alias gp="git pull --prune"
+alias gpu="git push"
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gc="git commit -m"
@@ -70,28 +70,44 @@ alias spoton="sudo mdutil -a -i on"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Run previous command with sudo
-function sudo!!
+function sudo!!() {
     eval sudo $history[1]
-end
+}
 
 # Like 'cat', but with pretty colors
 alias c="pygmentize -O style=monokai -f console256 -g"
 
 # Get week number
-alias week='date +%V'
+alias week="date +%V"
 
 # Merge PDF files
 # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
-alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
+alias mergepdf="/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py"
 
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
 
 # Shortcuts
 alias d="cd ~/Desktop"
-alias do="cd ~/Documents"
 alias dl="cd ~/Downloads"
-alias p="cd ~/Desktop/Projects"
+alias p="cd ~/Desktop/projects"
+
+# Work
+alias bd="cd backend && mvn clean install && cd .. && echo | envchain aws ./deploy.sh"
+alias ij="SPRING_PROFILES_ACTIVE=local AWS_REGION=eu-central-1 envchain aws idea"
+
+function java15() {
+  export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home"
+}
+
+function java16() {
+  export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home"
+}
+
+function java8() {
+  export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home"
+}
+

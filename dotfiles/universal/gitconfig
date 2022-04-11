@@ -36,7 +36,7 @@
 [help]
 	# Automatically correct and execute mistyped commands
 	autocorrect = 1
-	
+
 # Push easily. http://stackoverflow.com/a/23918418/89484
 [push]
 	default = current
@@ -76,3 +76,9 @@
 	added = green
 	changed = red
 	untracked = cyan
+[user]
+	name = Håvard Falk
+	email = havard.falk@bekk.no
+	signingkey = 0C7C907093BADDFB
+[commit]
+	gpgsign = true

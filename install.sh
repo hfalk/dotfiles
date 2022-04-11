@@ -61,7 +61,6 @@ clean_up() {
   # Cleaning up
   print_heading "Cleaning up"
   brew cleanup
-  brew cask cleanup
 }
 
 print_goodbye() {
@@ -75,14 +74,12 @@ print_welcome_message
 ask_for_sudo
 
 ./setup/prerequisites.sh
-./setup/fish.sh
-./setup/bash.sh
+./setup/zsh.sh
 ./setup/vim.sh
 ./setup/git.sh
 ./setup/node.sh
 macos_tweaks
 ./setup/applications.sh
-./setup/atom.sh
 clean_up
 
 print_goodbye
