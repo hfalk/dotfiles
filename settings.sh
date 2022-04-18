@@ -7,7 +7,7 @@ GIT_EMAIL="hfalk4@gmail.com"
 # Please make sure that you remove all the programs you don't want to install on your computer
 # P.S. The installer script won't install the applications unless you tell it to. It's your call  :)
 BREW_CASKS="adoptopenjdk16 android-studio appcleaner calibre colima docker docker-compose figma
-google-chrome iterm2 kap postman spectacle spotify torbrowser veracrypt visual-studio-code"
+google-chrome iterm2 kap messenger postman spectacle spotify torbrowser veracrypt visual-studio-code"
 
 # BREW (OPTIONAL)
 OPTIONAL_BREW_PACKAGES="gnupg nvm wget"
