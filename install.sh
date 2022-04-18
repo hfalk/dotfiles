@@ -77,7 +77,6 @@ ask_for_sudo
 ./setup/zsh.sh
 ./setup/vim.sh
 ./setup/git.sh
-./setup/node.sh
 macos_tweaks
 ./setup/applications.sh
 clean_up

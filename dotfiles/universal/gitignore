@@ -33,29 +33,3 @@ Thumbs.db
 # -----------------------------------------------------------------------------
 
 node_modules
-
-
-# -----------------------------------------------------------------------------
-# Textmate
-# -----------------------------------------------------------------------------
-
-*.tmproj
-*.tmproject
-tmtags
-
-
-# -----------------------------------------------------------------------------
-# Sublime Text
-# -----------------------------------------------------------------------------
-
-# cache files for sublime text
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-
-# workspace files are user-specific
-*.sublime-workspace
-
-# project files shouldn't be checked into the repository, as a significant
-# proportion of contributors will probably not be using SublimeText
-*.sublime-project

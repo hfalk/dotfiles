@@ -9,7 +9,7 @@ source "${SCRIPT_DIR}/utils.sh"
 # (optional) $2: Path to where the symlink will be placed (default is ~/)
 # (optional) $3: Whether the files should be hidden or not. true == hidden, false == visible
 symlink_dotfiles() {
-  relative_source_path=$1 # Example: "../dotfiles/fish"
+  relative_source_path=$1 # Example: "../dotfiles/zsh"
   absolute_source_path=$( cd "$( dirname "${BASH_SOURCE[0]}" )/$relative_source_path/" && pwd )
 
   # Where the symlinks should be placed. Default is ~/
