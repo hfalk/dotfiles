@@ -6,7 +6,7 @@ GIT_EMAIL="TODO: Your Email"
 # The applications below are regular apps such as Chrome and Spotify.
 # Please make sure that you remove all the programs you don't want to install on your computer
 # P.S. The installer script won't install the applications unless you tell it to. It's your call  :)
-BREW_CASKS="appcleaner google-chrome iterm2 kap messenger notion 
+BREW_CASKS="1password appcleaner google-chrome iterm2 kap messenger notion 
 spectacle spotify tor-browser veracrypt visual-studio-code"
 
 # --------------------------------------------------------------
