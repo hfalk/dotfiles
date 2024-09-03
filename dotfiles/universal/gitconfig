@@ -83,6 +83,10 @@
 [user]
 	name = TODO
 	email = TODO
-	signingkey = 8176D30D3BF045A8
+	signingkey = TODO
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [commit]
 	gpgsign = true
