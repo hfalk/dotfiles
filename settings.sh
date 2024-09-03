@@ -7,7 +7,7 @@ GIT_EMAIL="TODO: Your Email"
 # Please make sure that you remove all the programs you don't want to install on your computer
 # P.S. The installer script won't install the applications unless you tell it to. It's your call  :)
 BREW_CASKS="1password appcleaner google-chrome iterm2 kap messenger notion 
-spectacle spotify tor-browser veracrypt visual-studio-code"
+slack spectacle spotify tor-browser visual-studio-code"
 
 # --------------------------------------------------------------
 # DANGER ZONE! EDIT THE FOLLOWING SETTINGS WITH CARE
