@@ -3,9 +3,9 @@
 	cm = commit -m
 	cam = commit -am
 	s = status --short --branch
-  ch = checkout
+  	ch = checkout
 
-  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	# Log, just more space efficient and with pretty colors
 
 	undo = reset --soft HEAD^
@@ -36,6 +36,10 @@
 [help]
 	# Automatically correct and execute mistyped commands
 	autocorrect = 1
+
+[pull]
+	rebase = false
+
 
 # Push easily. http://stackoverflow.com/a/23918418/89484
 [push]
@@ -77,8 +81,8 @@
 	changed = red
 	untracked = cyan
 [user]
-	name = Håvard Falk
-	email = havard.falk@bekk.no
-	signingkey = 0C7C907093BADDFB
+	name = TODO
+	email = TODO
+	signingkey = 8176D30D3BF045A8
 [commit]
 	gpgsign = true

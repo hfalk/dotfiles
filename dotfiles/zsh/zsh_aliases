@@ -7,12 +7,13 @@ function .....() { cd ../../../.. }
 function cds() { open . }
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update="brew update; brew upgrade; brew cleanup; brew cask upgrade; npm update -g; apm update; apm upgrade; apm clean; omf update; fisher up"
+alias update="brew update; brew upgrade; brew cleanup; npm update -g; omf update"
 
 # git shortcuts
 alias ga="git add"
 alias gap="git add --patch"
 alias gp="git pull --prune"
+alias gph="git push"
 alias gpu="git push"
 alias gd="git diff"
 alias gdc="git diff --cached"
@@ -93,21 +94,15 @@ alias egrep="egrep --color=auto"
 # Shortcuts
 alias d="cd ~/Desktop"
 alias dl="cd ~/Downloads"
-alias p="cd ~/Desktop/projects"
+alias p="cd ~/projects"
 
 # Work
-alias bd="cd backend && mvn clean install && cd .. && echo | envchain aws ./deploy.sh"
-alias ij="SPRING_PROFILES_ACTIVE=local AWS_REGION=eu-central-1 envchain aws idea"
+alias ij="SPRING_PROFILES_ACTIVE=local KVAULT_NAME=TODO AZURE_CLI=1 teller run idea"
 
-function java15() {
-  export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home"
-}
-
-function java16() {
-  export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home"
+function java21() {
+  export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk-21.jdk/Contents/Home"
 }
 
 function java8() {
   export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home"
 }
-

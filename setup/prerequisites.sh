@@ -26,11 +26,11 @@ install_xcode_select() {
 install_brew() {
   print_info "Checking if Homebrew is installed"
   if ! which brew > /dev/null; then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/havard/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
     print_info "Running brew doctor"
     brew doctor
-    print_info "Setting up brew cask"
-    brew tap caskroom/cask
     print_result $? "Not installed. Install Homebrew\n"
   else
     print_success "Oh! Homebrew was already installed!\n"
@@ -46,19 +46,7 @@ install_brew_packages() {
   print_result $? "Install brew packages\n"
 }
 
-install_optional_brew_packages() {
-  print_info "The following are a collection of OPTIONAL brew packages. They aren't really need for the setup to work, but you might still find them useful:"
-  print_list $@
-  printf "\n"
-
-  if ask_question "Do you want to install the (completely optional) brew packages mentioned above?"; then
-    brew install "$@"
-    print_result $? "Install optional brew packages\n"
-  fi
-}
-
 print_heading "Install prerequisites"
 install_xcode_select
 install_brew
-install_brew_packages $ESSENTIAL_BREW_PACKAGES
-install_optional_brew_packages $OPTIONAL_BREW_PACKAGES
+install_brew_packages $BREW_PACKAGES

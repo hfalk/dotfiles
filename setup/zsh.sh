@@ -43,7 +43,7 @@ install_fzf() {
 }
 
 print_heading "Zsh"
-install_bash_packages $ZSH_BREW_PACKAGES
+install_zsh_packages $ZSH_BREW_PACKAGES
 create_symlinks
 install_oh_my_zsh
 install_fzf
