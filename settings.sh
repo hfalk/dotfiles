@@ -15,7 +15,8 @@ slack spectacle spotify tor-browser visual-studio-code"
 # --------------------------------------------------------------
 
 # BREW
-BREW_PACKAGES="colima diff-so-fancy docker docker-completion docker-compose fzf git grep gnupg nvm openjdk@21 tfenv vim"
+BREW_PACKAGES="1password-cli colima diff-so-fancy docker docker-completion 
+docker-compose fzf git grep gnupg nvm openjdk@21 tfenv vim"
 
 # ZSH (installed with brew)
 ZSH_BREW_PACKAGES="zsh zsh-autosuggestions zsh-syntax-highlighting"
